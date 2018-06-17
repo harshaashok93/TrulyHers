@@ -116,6 +116,7 @@ div.name-input-field {
 .third-row .row {
     width: 80%;
     margin: 0 auto;
+    padding-bottom: 40px;
 }
 .third-row h2 {
     padding: 70px 0 20px;
@@ -134,6 +135,35 @@ div.name-input-field {
 .third-row .row .column .card img {
     width: 100%;
 }
-.third-row .row .column .card h4, .third-row .column .card p {
+.third-row .row .column .card h4,
+.third-row .column .card p {
     color: #ffffff;
+}
+
+/* Footer Styles */
+.footer {
+    background: #ffffff;
+}
+.footer .other-page-links .nav,
+.footer .legal-links .nav {
+    margin: 0 auto;
+    padding: 10px 0;
+}
+.footer .other-page-links .nav .nav-item,
+.footer .legal-links .nav .nav-item {
+    width: auto;
+    text-align: center;
+}
+.footer .other-page-links .nav .nav-item a,
+.footer .legal-links .nav .nav-item a {
+    color: #000000;
+    padding: 0 5px;
+    border-right: 2px solid #000000;
+}
+.footer .other-page-links .nav .nav-item:last-child a,
+.footer .legal-links .nav .nav-item:last-child a {
+    border: none;
+}
+.footer .other-page-links .nav .nav-item a {
+    font-weight: 900;
 }
