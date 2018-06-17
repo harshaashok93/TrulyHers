@@ -1,0 +1,139 @@
+.container-fluid {
+    padding: 0;
+    background-color: #1abcd8;
+}
+
+/*  Header styles */
+.header-row {
+    padding: 0 70px;
+}
+.header-row .col-sm {
+    padding-top: 30px;
+}
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+.header-row .navigation-bar {
+    background: url('assets/balloon.png') no-repeat;
+    background-position: 200px 0;
+    background-size: auto 600px;
+}
+div.page-heading {
+    font-size: 28px;
+    color: #ffffff;
+}
+div.page-heading span {
+    font-weight: 900;
+}
+div.page-banner {
+    margin-top: 90px;
+}
+div.page-banner p {
+    color: #ffffff;
+    font-weight: 100;
+    font-size: 80px;
+}
+div.page-banner p span {
+    font-weight: 900
+}
+div.banner-description {
+    margin-top: 60px;
+}
+div.banner-description p {
+    color: #ffffff;
+    font-size: 28px;
+    font-weight: 100;
+}
+
+div.name-input-field {
+    display: inline-flex;
+    padding: 10px 0 160px;
+}
+
+.nav {
+    margin-right: 70px;
+}
+.nav .nav-item {
+    width: 100px;
+}
+.nav .nav-item a {
+    color: #ffffff;
+}
+
+/* Second row styles */
+.second-row {
+    background-color: #ffffff;
+    padding: 0 70px;
+}
+.second-row .column {
+    margin-top: 180px;
+}
+.second-row .column img {
+    width: 100%;
+}
+.second-row .column p, .second-row .column h2 {
+    color: #000000;
+    font-weight: 100;
+    text-align: right;
+}
+.second-row .column h2 {
+    font-size: 48px;
+}
+.second-row .column p {
+    font-size: 22px;
+    padding-left: 40px;
+}
+.second-row .column p span {
+    font-weight: 900;
+}
+.second-row .column button {
+    float: right;
+    color: #ffffff;
+    background: #1abcd8;
+    border-radius: 0;
+}
+@media screen and (max-width: 768px) {
+    .second-row .column {
+        margin-top: 50px !important;
+    }
+    .second-row .column p, .second-row .column h2 {
+        text-align: center;
+        padding: 0;
+    }
+    .second-row .column button {
+        float: none;
+    }
+}
+
+
+/* Third row styles */
+.third-row {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    background: #f3f2ed;
+}
+.third-row .row {
+    width: 80%;
+    margin: 0 auto;
+}
+.third-row h2 {
+    padding: 70px 0 20px;
+}
+.third-row .row .column {
+    margin: 10px auto;
+}
+.third-row .row .column .card {
+    width: 250px;
+    height: 250px;
+    background: #1abcd8;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+}
+.third-row .row .column .card img {
+    width: 100%;
+}
+.third-row .row .column .card h4, .third-row .column .card p {
+    color: #ffffff;
+}
