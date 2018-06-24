@@ -1,0 +1,30 @@
+version: '3'
+services:
+
+  database:
+    image: postgres:9.6
+    ports:
+      - 5432:5432
+    volumes:
+      - psql-trulyhers-data:/var/lib/postgresql/data
+      - .:/shared
+
+  application:
+    image: python:3.6-slim
+    links:
+      - database
+    ports:
+      - 8000:8000
+    command: tail -f /dev/null
+    volumes:
+      - .:/application
+      - application-python-site-packages:/usr/local/lib/python3.6/site-packages
+      - application-usr-local-bin:/usr/local/bin
+
+volumes:
+  application-python-site-packages:
+    driver: local
+  psql-trulyhers-data:
+    driver: local
+  application-usr-local-bin:
+    driver: local
